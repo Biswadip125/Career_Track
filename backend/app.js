@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import authRouter from "./routes/auth.route.js";
 const app = express();
 
 app.use(
@@ -19,5 +20,7 @@ app.get("/health", (req, res) => {
     message: "CareerTrack API is running",
   });
 });
+
+app.use("/auth", authRouter);
 
 export default app;
