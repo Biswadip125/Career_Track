@@ -88,7 +88,8 @@ I used Kiro as an AI pair-programming assistant throughout development. I used i
 4. **Database integration:** Set up the Mongoose schema and connected the API to MongoDB.
 5. **Refactoring:** Cleaned up repeated code by extracting reusable components and API helper functions.
 ## Project Structure
- 
+
+``` 
 .
 ├── backend/
 │   ├── config/
@@ -133,7 +134,7 @@ I used Kiro as an AI pair-programming assistant throughout development. I used i
 │   ├── .env
 │   └── package.json
 └── README.md
- 
+ ```
 ## Future Improvements
  
 - User authentication
