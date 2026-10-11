@@ -30,8 +30,8 @@ A simple web application that helps job seekers keep track of the jobs they have
  
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/Biswadip125/Career_Track
+   cd Career_Track
 ```
  
 2. **Install backend dependencies**
@@ -43,8 +43,8 @@ A simple web application that helps job seekers keep track of the jobs they have
 3. **Configure environment variables**
    Create a `.env` file inside the `backend` folder:
 ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
+   PORT=3000
+   MONGO_URI=mongodb+srv://biswadipchowdhury114_db_user:LX9rWEXitVdN5Jy6@cluster0.kxk1bnf.mongodb.net/?appName=Cluster0
 ```
  
 4. **Install frontend dependencies**
@@ -61,7 +61,7 @@ A simple web application that helps job seekers keep track of the jobs they have
    npm start
 ```
  
-   The API runs at `http://localhost:5000`.
+   The API runs at `http://localhost:3000`.
  
 2. **Start the frontend**
 ```bash
@@ -69,7 +69,7 @@ A simple web application that helps job seekers keep track of the jobs they have
    npm start
 ```
  
-   The app opens at `http://localhost:3000`.
+   The app opens at `http://localhost:5173`.
  
 ## AI Tool Used
  
