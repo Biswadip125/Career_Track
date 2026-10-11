@@ -4,10 +4,11 @@ A simple web application that helps job seekers keep track of the jobs they have
  
 ## Features
  
-- **Create** a new job application (company, role, date applied, status, notes)
-- **Read** all applications in a clean, easy-to-scan list
-- **Update** an application, e.g. change status from *Applied* to *Interview* or *Offer*
+- **Dashboard:** See the total number of job applications you have added at a glance
+- **Add** a new job application (company, position, date applied, status, notes)
+- **Edit** an existing application, e.g. update its status from *Applied* to *Interview* or *Offer*
 - **Delete** applications that are no longer relevant
+- **Search** applications by company name or position
 - Responsive UI that works on desktop and mobile
 - Form validation for required fields
 ## Technologies Used
@@ -18,7 +19,7 @@ A simple web application that helps job seekers keep track of the jobs they have
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB (Mongoose)
 - **Tools:** Git, GitHub, npm, Postman
-- **AI Tool:** Kiro / Code0 *(keep the one you used)*
+- **AI Tool:** Kiro 
 ## Setup and Installation
  
 ### Prerequisites
@@ -73,7 +74,7 @@ A simple web application that helps job seekers keep track of the jobs they have
  
 ## AI Tool Used
  
-**Kiro** *(or Code0, replace as appropriate)*
+**Kiro** 
  
 ## AI Development Experience
  
@@ -88,21 +89,50 @@ I used Kiro as an AI pair-programming assistant throughout development. I used i
 5. **Refactoring:** Cleaned up repeated code by extracting reusable components and API helper functions.
 ## Project Structure
  
-```
 .
 ├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
 │   ├── models/
 │   ├── routes/
-│   ├── controllers/
+│   │   ├── auth.route.js
+│   │   └── jobApplication.route.js
+│   ├── utils/
+│   ├── .env
+│   ├── .gitignore
+│   ├── app.js
+│   ├── package.json
 │   └── server.js
 ├── frontend/
+│   ├── public/
 │   ├── src/
+│   │   ├── assets/
 │   │   ├── components/
+│   │   │   ├── common/
+│   │   │   ├── forms/
+│   │   │   │   └── ApplicationForm.jsx
+│   │   │   ├── layout/
+│   │   │   │   └── Sidebar.jsx
+│   │   │   └── Navbar.jsx
 │   │   ├── pages/
-│   │   └── App.js
+│   │   │   ├── AddApplication.jsx
+│   │   │   ├── ApplicationDetails.jsx
+│   │   │   ├── Applications.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── LandingPage.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   ├── redux/
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── applicationService.js
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .env
 │   └── package.json
 └── README.md
-```
  
 ## Future Improvements
  
